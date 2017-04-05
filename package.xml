@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+  <name>rosbag_imu_tools</name>
+  <version>0.0.0</version>
+  <description>For correcting rosbag</description>
+
+  <maintainer email="siddharthjha@outlook.com">debian</maintainer>
+
+
+  <license>TODO</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>topic_tools</build_depend>
+  <build_depend>rosbag</build_depend>
+
+ 
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>topic_tools</run_depend>
+  <run_depend>rosbag</run_depend>
+
+  <export>
+
+
+  </export>
+</package>
