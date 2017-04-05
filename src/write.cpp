@@ -2,8 +2,10 @@
     #include <std_msgs/Int32.h>
     #include <std_msgs/String.h>
 
+int main(int argc, char *argv[])
+{
     rosbag::Bag bag;
-    bag.open("test.bag", rosbag::bagmode::Write);
+    bag.open(argv[1], rosbag::bagmode::Write);
 
     std_msgs::String str;
     str.data = std::string("foo");
@@ -15,3 +17,4 @@
     bag.write("numbers", ros::Time::now(), i);
 
     bag.close();
+}

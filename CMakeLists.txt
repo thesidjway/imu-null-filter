@@ -26,5 +26,5 @@ include_directories(
 add_executable(reader src/read.cpp)
 target_link_libraries(reader ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 
-
-
+add_executable(writer src/write.cpp)
+target_link_libraries(writer ${catkin_LIBRARIES} ${Boost_LIBRARIES})

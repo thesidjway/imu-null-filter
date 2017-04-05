@@ -12,8 +12,6 @@ int main(int argc, char *argv[])
     rosbag::Bag bag;
     bag.open(argv[1], rosbag::bagmode::Read);
 
-    std::cout<<"DAMN";
-
     std::vector<std::string> topics;
     topics.push_back(std::string(argv[2]));
 
